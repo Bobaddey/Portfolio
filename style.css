@@ -524,9 +524,28 @@ li{
 
 /*Start media queries*/
 @media screen and (max-width: 768px){
-    body{
+       body{
         background: url('images/sitebg2.jpg') no-repeat center fixed;
         background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .top-nav{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: -150vh;
+        z-index: 50;
+        background-color: #16162d;
+        border-bottom-right-radius: 100%;
+        border-bottom-left-radius: 100%;
+        transition: all 650ms cubic-bezier(1,0,0,1);
+    }
+    section{
+        /* padding: 3rem 0;
+        width: 50%;
+        height: 100%; */
     }
 
     .landing-text h1{
@@ -546,6 +565,10 @@ li{
     }
     .nav-list{
         flex-direction: column;
+    }
+    .icon-link{
+        flex:1;
+        font-size: 3rem;
     }
     li{
         margin: 2rem 0;
@@ -581,6 +604,26 @@ li{
 }
 
 @media screen and (max-width:600px){
+    body{
+        background: url('images/sitebg2.jpg') no-repeat center fixed;
+        background-size: cover;
+        width: 100vw;
+        height: 100%;
+    }
+    .top-nav{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: -150vh;
+        z-index: 50;
+        background-color: #16162d;
+        border-bottom-right-radius: 100%;
+        border-bottom-left-radius: 100%;
+        transition: all 650ms cubic-bezier(1,0,0,1);
+    }
+    section{
+        
+    }
     .menu-toggler{
         top: 2rem;
         right: 1rem;
@@ -599,8 +642,12 @@ li{
     .about .container{
         flex-direction: column;
     }
+    .icon-link{
+        flex:1;
+        font-size: 1.5rem;
+    }
     .profile-image{
-        margin: 0 0 7rem 6rem;
+        margin: 0 0 7rem 0rem;
     }
     .portfolio-content{
         flex-direction: column;
